@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Futuriste GTA</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            z-index: 100;
+        }
+
+        .content {
+            padding-top: 80px;
+            text-align: center;
+        }
+
+        .game-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .game-card {
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .game-card:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        button {
+            background-color: #00ff00;
+            color: black;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff00ff;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            color: #ccc;
+        }
+        
+        .game-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Bienvenue sur le site Futuriste GTA
+    </header>
+    
+    <div class="content">
+        <h1>Jeux GTA à télécharger</h1>
+        <p>Les jeux GTA les plus célèbres à télécharger directement !</p>
+        
+        <div class="game-container">
+            <div class="game-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/GTA_San_Andreas_cover_art.jpg" alt="GTA San Andreas">
+                <div class="game-title">GTA San Andreas</div>
+                <button onclick="downloadGame('GTA San Andreas')">Télécharger</button>
+            </div>
+            <div class="game-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Grand_Theft_Auto_Vice_City.jpg" alt="GTA Vice City">
+                <div class="game-title">GTA Vice City</div>
+                <button onclick="downloadGame('GTA Vice City')">Télécharger</button>
+            </div>
+            <div class="game-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/GTA_V_Logo.png" alt="GTA V">
+                <div class="game-title">GTA V</div>
+                <button onclick="downloadGame('GTA V')">Télécharger</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        Site créé en 2025 - GTA Games Download
+    </footer>
+
+    <script>
+        function downloadGame(gameName) {
+            alert('Téléchargement de ' + gameName + ' lancé!');
+            // Logique de téléchargement réelle ici (exemple avec lien fictif)
+            window.location.href = 'https://www.example.com/download/' + gameName.toLowerCase().replace(' ', '-');
+        }
+    </script>
+</body>
+</html>
